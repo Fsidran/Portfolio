@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+* {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 70px;
+    background: linear-gradient(to bottom right, #3484ba, #123e5c);
+    -webkit-background-clip: text;
+    color: transparent; /* Assure que le texte est transparent pour montrer le dégradé */
+}
+
+#Title {
+    margin: 100px 10px 100px 10px;
+}
+
+#Welcome {
+    margin: 100px 10px 100px 10px;
+}
+
+.animateOnScroll {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+.animateOnScrollisVisible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: .5s;
+  }
