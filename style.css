@@ -1,32 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Nova+Square&display=swap');
 
 * {
     font-family: 'Montserrat Alternates', sans-serif;
-    margin: 10px;
+
+}
+
+#main {
+    background: #00A9FF;
+    padding: 10px;
 }
 
 h1 {
     font-size: 70px;
-    background: linear-gradient(to bottom right, #3484ba, #123e5c);
+    background-image: linear-gradient(to bottom right, #FEFFAC, #45FFCA);
     -webkit-background-clip: text;
     color: transparent; /* Assure que le texte est transparent pour montrer le dégradé */
+
 }
 
-#Title {
-    margin: 100px 10px 100px 10px;
+#Florian {
+    margin: 200px 0px 10px 0px;
 }
 
-#Welcome {
-    margin: 100px 10px 100px 10px;
+#WebD {
+    margin: 0px 0px 400px 0px;
 }
 
-.animateOnScroll {
+h2 {
+    text-align: center;
+    font-size: 40px;
+    background-image: linear-gradient(to bottom right, #00A9FF, #123e5c);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 300px 0px 300px 0px;
+}
+
+#images {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    align-content: space-evenly;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.img {
+    width: 300px;
+    border-radius: 20px;
+    border: 3px solid black;
+    transition: 0.5s;
+}
+
+h3 {
+    margin: 30px 10px 20px 10px;
+}
+
+
+.Text {
+    margin: 0px 10px 30px 10px;
+}
+
+#CV {
+    display: grid;
+    margin: 100px 0px 100px 0px;
+}
+
+[class*="animateOnScroll-"] {
     opacity: 0;
     transform: translateY(-50px);
   }
 
-.animateOnScrollisVisible {
+.animateOnScroll-isVisible {
     opacity: 1;
     transform: translateY(0);
-    transition: .5s;
+    transition: .8s;
   }
+
+.animateOnScroll-1 {
+    transition-delay: 0.1s;
+}
+
+.animateOnScroll-2 {
+    transition-delay: 0.2s;
+} 
+

@@ -1,4 +1,4 @@
-const ratio = 0.25;
+const ratio = 0.5;
 
 const options = {
   root: null,
@@ -9,13 +9,13 @@ const options = {
 const handleIntersect = function (entries, observer) {
   entries.forEach(function (entry) {
     if (entry.intersectionRatio > ratio) {
-      entry.target.classList.add("animateOnScrollisVisible");
+      entry.target.classList.add("animateOnScroll-isVisible");
       observer.unobserve(entry.target);
     }
   });
 };
 
 const observer = new IntersectionObserver(handleIntersect, options);
-document.querySelectorAll(".animateOnScroll").forEach(function (r) {
+document.querySelectorAll('[class*="animateOnScroll-"]').forEach(function (r) {
   observer.observe(r);
 });
